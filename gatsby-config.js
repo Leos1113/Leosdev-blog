@@ -5,7 +5,7 @@ module.exports = {
       name: `LeosDev`,
       summary: `programador web que en su tiempo libre intenta aprender cosas nuevas.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Blog de programación en el que iré narrando todo lo que este en proceso de aprender.`,
     siteUrl: `https://leosdev.com/`,
     social: {
       twitter: `dev_leos`,
@@ -40,6 +40,13 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-plugin-sass`,
+            options: {
+              // Configure SASS to process Tailwind
+              postCssPlugins: [require('tailwindcss')],
             },
           },
           `gatsby-remark-prismjs`,

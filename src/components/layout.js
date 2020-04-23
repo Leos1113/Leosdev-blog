@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import '../styles/tailwind.scss'
+
+import Topbar from "./topbar"
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
@@ -48,6 +52,8 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
+    <>
+    <Topbar />
     <div
       style={{
         marginLeft: `auto`,
@@ -56,6 +62,7 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
+      
       <header>{header}</header>
       <main>{children}</main>
       <footer>
@@ -64,6 +71,7 @@ const Layout = ({ location, title, children }) => {
         LeosDev
       </footer>
     </div>
+    </>
   )
 }
 
