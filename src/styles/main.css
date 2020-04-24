@@ -1,5 +1,6 @@
 * {
-    background-color: #009A9A;
+    background-color: '#f8f9fa';
+    color: '#2c3e50'
 }
 
 .logo-img {
@@ -9,3 +10,4 @@
 nav {
     padding: 5vh 2vw 0vh 2vw;
 }
+

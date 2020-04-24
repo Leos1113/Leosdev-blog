@@ -16,7 +16,6 @@ const Topbar = () => {
           >
             <img src={Logo} class="logo-img" alt="Logo de Leos Dev"></img>
           </Link>
-            
         </div>
       </nav>
     )
