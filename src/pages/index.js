@@ -4,19 +4,21 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Card from "../components/card"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
+  console.log(posts);
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Todos los posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
+          <Card key={node.fields.slug} title={title} desc={node.frontmatter.description} imagename={node.frontmatter.imagename}>
+            <article key={node.fields.slug}>
             <header>
               <h3
                 style={{
@@ -37,6 +39,8 @@ const BlogIndex = ({ data, location }) => {
               />
             </section>
           </article>
+          </Card>
+          
         )
       })}
       <Bio />
@@ -64,6 +68,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags,
+            imagename
           }
         }
       }

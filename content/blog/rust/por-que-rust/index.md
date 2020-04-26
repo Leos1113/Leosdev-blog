@@ -1,9 +1,14 @@
 ---
 title: ¿Por qué Rust?
 date: "2020-03-12T19:00:00.284Z"
-description: "Hello World"
+description: "Rust es un lenguaje de programación desarrollado por Mozilla.
+              Es un lenguaje bastante joven."
+imagename: "rust-lenguaje-programacion-logo.png"
+tags: ['javascript','react','gatsby']
+alt: "Logo del lenguaje de programación Rust"
 ---
 
+          
 En este post analizaremos por qué aprender rust, a continuación vemos los puntos fuertes de este lenguaje:
 
 ## ¿Qué es Rust?

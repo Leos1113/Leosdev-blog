@@ -11,3 +11,6 @@ nav {
     padding: 5vh 2vw 0vh 2vw;
 }
 
+.linear-gradient-leos {
+    background: linear-gradient(90deg,#5d5b82 10%,#4f5da7 39%,#4e74c2 58%,#8fffc7);
+}
