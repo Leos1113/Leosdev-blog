@@ -12,35 +12,36 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
   console.log(posts);
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={'Últimos posts'}>
       <SEO title="Todos los posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <Card key={node.fields.slug} title={title} desc={node.frontmatter.description} imagename={node.frontmatter.imagename}>
-            <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-          </Card>
-          
+          <Link to={node.fields.slug} key={node.fields.slug}>
+            <Card key={node.fields.slug} title={title} desc={node.frontmatter.description} cardImage={node.frontmatter.cardImage.childImageSharp.fluid} date={node.frontmatter.date}>
+              <article key={node.fields.slug}>
+              <header>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
+            </Card>
+          </Link>
         )
       })}
       <Bio />
@@ -65,11 +66,17 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
             description
             tags,
-            imagename
+            cardImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

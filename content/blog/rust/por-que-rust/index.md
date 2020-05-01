@@ -3,7 +3,7 @@ title: ¿Por qué Rust?
 date: "2020-03-12T19:00:00.284Z"
 description: "Rust es un lenguaje de programación desarrollado por Mozilla.
               Es un lenguaje bastante joven."
-imagename: "rust-lenguaje-programacion-logo.png"
+cardImage: './../../../assets/rust-lenguaje-programacion-logo.png'
 tags: ['javascript','react','gatsby']
 alt: "Logo del lenguaje de programación Rust"
 ---
@@ -61,11 +61,11 @@ También ofrece la posibilidad de marcar nuestro código como *“unsafe”* par
 
 ## Librerias y frameworks para Rust
 
-Gracias a Cargo y [crates.io](https://crates.io/), Rust cuenta con abundancia de librerías de calidad que podemos usar para nuestros proyectos.
+Gracias a Cargo y <a href="https://crates.io/" target="_blank">crates.io</a>, Rust cuenta con abundancia de librerías de calidad que podemos usar para nuestros proyectos.
 
-Hay alrededor de 33.000 librerias en [crates.io](https://crates.io/) que podemos añadir a nuestro proyecto de Rust con un simple comando de Cargo.
+Hay alrededor de 33.000 librerias en <a href="https://crates.io/" target="_blank">crates.io</a> que podemos añadir a nuestro proyecto de Rust con un simple comando de Cargo.
 
-Frameworks para web tenemos a [Rocket](https://rocket.rs/) y para blockchain encontramos [Substrate](https://www.parity.io/substrate).
+Frameworks para web tenemos a <a href="https://rocket.rs/" target="_blank">Rocket</a> y para blockchain encontramos <a href="https://www.parity.io/substrate" target="_blank">Substrate</a>.
 
 ## Conclusiones
 

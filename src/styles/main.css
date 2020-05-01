@@ -1,6 +1,7 @@
 * {
-    background-color: '#f8f9fa';
-    color: '#2c3e50'
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: Roboto,sans-serif;
 }
 
 .logo-img {
@@ -14,3 +15,28 @@ nav {
 .linear-gradient-leos {
     background: linear-gradient(90deg,#5d5b82 10%,#4f5da7 39%,#4e74c2 58%,#8fffc7);
 }
+
+.card-img-div > img {
+    background-color: transparent;
+    max-width:100%;
+    max-height:100%;
+    display:block;
+    margin:auto;
+}
+
+
+.section-post-content p {
+    margin-bottom: 2rem;
+}
+
+.section-post-content a, a:link, a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: #007bff;
+    box-shadow: none;
+}
+
+/* 
+TODO: hay que estilizar todo el contenido del blog, con section-post-content el selector que sea
+
+TODO: mirar que el segundo post quede bien el prism.css es decir que los bloques de código queden resultones
+*/
