@@ -35,6 +35,30 @@ nav {
     box-shadow: none;
 }
 
+.section-post-content h1 {
+    line-height: 1.4;
+    font-size: 3em;
+    margin: 0 0 .5em;
+}
+
+.section-post-content h2 {
+    margin-bottom: 1em!important;
+    margin-top: 2em!important;
+    font-size: 1.75rem;
+}
+
+.section-post-content h2::before {
+    content: "#";
+    margin-right: .5rem;
+    font-size: 90%;
+    opacity: .7;
+    line-height: 1;
+    color: #17a2b8;
+    transform: translateY(4px);
+    display: inline-block;
+    border-radius: 10px;
+}
+
 /* 
 TODO: hay que estilizar todo el contenido del blog, con section-post-content el selector que sea
 

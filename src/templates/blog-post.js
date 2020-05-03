@@ -21,15 +21,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
           <h1
             style={{
+              ...scale(6 / 5),
               marginTop: rhythm(1),
-              marginBottom: 0,
+              marginBottom: .2,
             }}
           >
             {post.frontmatter.title}
           </h1>
           <p
             style={{
-              ...scale(-1 / 5),
+              ...scale(-.5 / 5),
               display: `block`,
               marginBottom: rhythm(1),
             }}
