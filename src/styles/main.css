@@ -5,11 +5,17 @@
 }
 
 .logo-img {
-    max-width: 12vw;
+    margin: 0;
+}
+
+.home-icon {
+    background-color: black;
+    margin: 0;
+    width: 90%;
 }
 
 nav {
-    padding: 5vh 2vw 0vh 2vw;
+    padding: 1.5vw 3vw;
 }
 
 .linear-gradient-leos {
