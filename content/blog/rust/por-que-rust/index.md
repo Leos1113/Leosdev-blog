@@ -4,7 +4,7 @@ date: "2020-03-12T19:00:00.284Z"
 description: "Rust es un lenguaje de programación desarrollado por Mozilla.
               Es un lenguaje bastante joven."
 cardImage: './../../../assets/rust-lenguaje-programacion-logo.png'
-tags: ['javascript','react','gatsby']
+tags: ['rust']
 alt: "Logo del lenguaje de programación Rust"
 ---
 

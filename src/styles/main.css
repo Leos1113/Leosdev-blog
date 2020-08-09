@@ -1,5 +1,4 @@
 * {
-    background-color: #f8f9fa;
     color: #333;
     font-family: Roboto,sans-serif;
 }
@@ -16,6 +15,14 @@
 
 nav {
     padding: 1.5vw 3vw;
+}
+
+.token.operator {
+    background-color: transparent;
+}
+
+.token.table.class-name {
+    display: inline;
 }
 
 .linear-gradient-leos {

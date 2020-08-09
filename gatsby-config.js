@@ -49,6 +49,7 @@ module.exports = {
               postCssPlugins: [require('tailwindcss')],
             },
           },
+          `gatsby-remark-embed-snippet`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -82,6 +83,12 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
