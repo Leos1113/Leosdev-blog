@@ -8,9 +8,9 @@ import Card from "../components/card"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-  console.log(posts);
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
+
   return (
     <Layout location={location} title={'Últimos posts'}>
       <SEO title="Todos los posts" />
