@@ -3,7 +3,7 @@ module.exports = {
     title: `Leos Dev Blog`,
     author: {
       name: `LeosDev`,
-      summary: `programador web que en su tiempo libre intenta aprender cosas nuevas.`,
+      summary: `Programador web que en su tiempo libre intenta aprender cosas nuevas.`,
     },
     description: `Blog de programación en el que iré narrando todo lo que este en proceso de aprender.`,
     siteUrl: `https://leosdev.com/`,
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID,
         head: false,
         anonymize: true,
         respectDNT: true,
