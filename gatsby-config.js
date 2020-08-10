@@ -1,7 +1,7 @@
 require("dotenv").config({
   path: `.env.production`,
 })
-console.log(process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID);
+
 module.exports = {
   siteMetadata: {
     title: `Leos Dev Blog`,
