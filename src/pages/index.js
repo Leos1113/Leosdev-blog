@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <Link to={node.fields.slug} key={node.fields.slug}>
-            <Card key={node.fields.slug} title={title} desc={node.frontmatter.description} cardImage={node.frontmatter.cardImage.childImageSharp.fluid} date={node.frontmatter.date}>
+            <Card key={node.fields.slug} title={title} desc={node.frontmatter.description} cardImage={node.frontmatter.cardImage.childImageSharp.fluid} alt={node.frontmatter.alt} date={node.frontmatter.date}>
               <article key={node.fields.slug}>
               <header>
                 <h3
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
             title
             description
             tags,
+            alt,
             cardImage {
               childImageSharp {
                 fluid {
