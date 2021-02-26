@@ -72,8 +72,6 @@ nav {
     border-radius: 10px;
 }
 
-/* 
-TODO: hay que estilizar todo el contenido del blog, con section-post-content el selector que sea
-
-TODO: mirar que el segundo post quede bien el prism.css es decir que los bloques de código queden resultones
-*/
+.card-text-date {
+    color: #465a76;
+}

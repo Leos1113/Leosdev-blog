@@ -17,7 +17,7 @@ const Card = ({ title, desc, cardImage, alt, date }) => {
                     </div>
                     <div className="flex items-center bg-white">
                         <div className="text-sm bg-white">
-                            <p className="text-gray-500 bg-white">{date}</p>
+                            <p className="card-text-date bg-white">{date}</p>
                         </div>
                     </div>
                 </div>
