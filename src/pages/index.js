@@ -8,7 +8,6 @@ import Card from "../components/card"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
   return (
