@@ -10,7 +10,7 @@ const Card = ({ title, desc, cardImage, alt, date }) => {
                     <img src={src} alt={alt} />
                 </div>
                 
-                <div className="border-r border-b border-l  lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div className="border-r border-b border-l lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                     <div className="mb-8 bg-white">
                         <div className="text-black font-bold text-xl mb-2 bg-white">{title}</div>
                         <p className="text-grey-darker text-base bg-white">{desc}</p>
